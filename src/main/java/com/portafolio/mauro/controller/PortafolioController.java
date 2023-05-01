@@ -24,6 +24,7 @@ public class PortafolioController {
     @Autowired
     public IPortafolioService portaServ;
     
+    
     @GetMapping("")
     @ResponseBody
     public Principal mostrarDatos(){
@@ -85,6 +86,7 @@ public class PortafolioController {
     @PostMapping("/estudios/cargar")
     public void cargarEstudio(@RequestBody Estudio estu){
         portaServ.cargarEstudio(estu);
+        portaServ.verDatos().setLista_estudios(portaServ.verEstudios());
     }
     
     @PutMapping("/estudios/editar")
@@ -100,6 +102,7 @@ public class PortafolioController {
     @PostMapping("/habilidades/cargar")
     public void cargarHabilidad(@RequestBody Habilidad hab){
         portaServ.cargarHabilidad(hab);
+        portaServ.verDatos().setLista_habilidades(portaServ.verHabilidades());
     }
     
     @PutMapping("/habilidades/editar")
@@ -115,6 +118,7 @@ public class PortafolioController {
     @PostMapping("/idiomas/cargar")
     public void cargarIdiomas(@RequestBody Idioma idio){
         portaServ.cargarIdiomas(idio);
+        portaServ.verDatos().setLista_idiomas(portaServ.verIdiomas());
     }
     
     @PutMapping("/idiomas/editar")
@@ -130,6 +134,7 @@ public class PortafolioController {
     @PostMapping("/proyectos/cargar")
     public void cargarProyectos(@RequestBody Proyecto proy){   
         portaServ.cargarProyectos(proy);
+        portaServ.verDatos().setLista_proyectos(portaServ.verProyectos());
     }
     
     @PutMapping("/proyectos/editar")
@@ -145,6 +150,7 @@ public class PortafolioController {
     @PostMapping("/redes/cargar")
     public void cargarRed(@RequestBody Redes red){ 
         portaServ.cargarRed(red);
+        portaServ.verDatos().setLista_redes(portaServ.verRedes());
     }
     
     @PutMapping("/redes/editar")
