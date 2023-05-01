@@ -24,6 +24,7 @@ public class PortafolioController {
     @Autowired
     public IPortafolioService portaServ;
     
+    //public Principal datosPrincipales = portaServ.verDatos();
     
     @GetMapping("")
     @ResponseBody
@@ -86,11 +87,15 @@ public class PortafolioController {
     @PostMapping("/estudios/cargar")
     public void cargarEstudio(@RequestBody Estudio estu){
         portaServ.cargarEstudio(estu);
-        portaServ.verDatos().setLista_estudios(portaServ.verEstudios());
+        
+        Principal datosPrincipales = portaServ.verDatos();
+        datosPrincipales.setLista_estudios(portaServ.verEstudios());
+        portaServ.cargarDatos(datosPrincipales);
+        //portaServ.verDatos().setLista_estudios(portaServ.verEstudios());
     }
     
     @PutMapping("/estudios/editar")
-    public void editarDatos(@RequestBody Estudio estu){
+    public void editarEstudio(@RequestBody Estudio estu){
         cargarEstudio(estu);
     }
     
