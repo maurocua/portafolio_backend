@@ -38,7 +38,7 @@ public class WebSecurityConfig {
     UserDetailsService userDetailsService(){
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
         manager.createUser(User.withUsername("admin")
-            .password(passwordEncoder().encode("admin"))
+            .password(passwordEncoder().encode("Mermelada666"))
             .roles()
             .build());
         return manager;
@@ -57,4 +57,5 @@ public class WebSecurityConfig {
     PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
+    
 }
