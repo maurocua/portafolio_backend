@@ -1,7 +1,6 @@
 com\portafolio\mauro\model\Redes.class
 com\portafolio\mauro\repository\RedesRepository.class
 com\portafolio\mauro\repository\ProyectoRepository.class
-security\WebSecurityConfig.class
 com\portafolio\mauro\model\Idioma.class
 com\portafolio\mauro\controller\PortafolioController.class
 com\portafolio\mauro\MauroApplication.class
@@ -18,3 +17,4 @@ com\portafolio\mauro\model\Principal.class
 com\portafolio\mauro\repository\EstudioRepository.class
 com\portafolio\mauro\repository\ContactoRepository.class
 com\portafolio\mauro\service\IPortafolioService.class
+com\portafolio\mauro\security\WebSecurityConfig.class
