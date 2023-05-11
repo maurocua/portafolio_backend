@@ -2,6 +2,7 @@ package com.portafolio.mauro.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -21,6 +22,7 @@ public class WebSecurityConfig {
         return http
                 .csrf().disable()
                 .authorizeRequests()
+                .antMatchers(HttpMethod.GET).permitAll()
                 .anyRequest()
                 .authenticated()
                 .and()
@@ -36,7 +38,7 @@ public class WebSecurityConfig {
     UserDetailsService userDetailsService(){
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
         manager.createUser(User.withUsername("mauro.cuassolo@gmail.com")
-            .password(passwordEncoder().encode("2KZ1QDnCRbTDJkg82ccE5RiQxd"))
+            .password(passwordEncoder().encode("Portafolio1"))
             .roles("ADMIN")
             .build());
         return manager;
@@ -55,5 +57,4 @@ public class WebSecurityConfig {
     PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
-    
 }
