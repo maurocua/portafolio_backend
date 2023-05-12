@@ -22,7 +22,8 @@ public class WebSecurityConfig {
         return http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.GET).permitAll()
+                .antMatchers(HttpMethod.GET, "/idiomas", "/estudios", "/", "/habilidades","/proyectos","/redes")
+                .permitAll()
                 .anyRequest()
                 .authenticated()
                 .and()
