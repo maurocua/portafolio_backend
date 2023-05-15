@@ -1,6 +1,8 @@
 package com.portafolio.mauro.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -26,6 +28,7 @@ public class Principal {
     @OneToMany
     private List<Habilidad> lista_habilidades;
             
+    
     @OneToMany
     private List<Idioma> lista_idiomas;
     
