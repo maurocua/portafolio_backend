@@ -7,9 +7,11 @@ import com.portafolio.mauro.model.Idioma;
 import com.portafolio.mauro.model.Principal;
 import com.portafolio.mauro.model.Proyecto;
 import com.portafolio.mauro.model.Redes;
+import com.portafolio.mauro.repository.RedesRepository;
 import com.portafolio.mauro.service.IPortafolioService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,10 +21,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class PortafolioController {
     @Autowired
     public IPortafolioService portaServ;
+    
+    @Autowired
+    public RedesRepository redesRepo;
     
     //public Principal datosPrincipales = portaServ.verDatos();
     
@@ -74,7 +80,7 @@ public class PortafolioController {
         data.setLista_idiomas(portaServ.verIdiomas());
         data.setLista_proyectos(portaServ.verProyectos());
         data.setLista_redes(portaServ.verRedes());
-        data.setLista_contactos(portaServ.verContactos());
+        //data.setLista_contactos(portaServ.verContactos());
         
         portaServ.cargarDatos(data);
     }           

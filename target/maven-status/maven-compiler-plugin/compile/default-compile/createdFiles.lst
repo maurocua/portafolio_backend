@@ -2,7 +2,6 @@ com\portafolio\mauro\model\Redes.class
 com\portafolio\mauro\repository\RedesRepository.class
 com\portafolio\mauro\repository\ProyectoRepository.class
 com\portafolio\mauro\model\Idioma.class
-com\portafolio\mauro\security\AuthController.class
 com\portafolio\mauro\controller\PortafolioController.class
 com\portafolio\mauro\MauroApplication.class
 com\portafolio\mauro\repository\PrincipalRepository.class
@@ -10,6 +9,8 @@ com\portafolio\mauro\WebConfig.class
 com\portafolio\mauro\repository\IdiomaRepository.class
 com\portafolio\mauro\model\Contacto.class
 com\portafolio\mauro\model\Estudio.class
+com\portafolio\mauro\security\controller\BasicAuthController.class
+com\portafolio\mauro\security\AuthenticationBean.class
 com\portafolio\mauro\service\PortafolioService.class
 com\portafolio\mauro\model\Habilidad.class
 com\portafolio\mauro\model\Proyecto.class

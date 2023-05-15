@@ -3,6 +3,7 @@ package com.portafolio.mauro.model;
 import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
@@ -31,8 +32,8 @@ public class Principal {
     @OneToMany
     private List<Proyecto> lista_proyectos;
     
-    @OneToMany
-    private List<Contacto> lista_contactos;
+//    @OneToMany
+//    private List<Contacto> lista_contactos;
     
     @OneToMany
     private List<Redes> lista_redes;
@@ -53,7 +54,7 @@ public class Principal {
         this.lista_habilidades = lista_habilidades;
         this.lista_idiomas = lista_idiomas;
         this.lista_proyectos = lista_proyectos;
-        this.lista_contactos = lista_contactos;
+        //this.lista_contactos = lista_contactos;
         this.lista_redes = lista_redes;
     }
 

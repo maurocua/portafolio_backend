@@ -3,6 +3,8 @@ C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mau
 C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\model\Habilidad.java
 C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\repository\PrincipalRepository.java
 C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\repository\ProyectoRepository.java
+C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\security\AuthenticationBean.java
+C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\security\controller\BasicAuthController.java
 C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\repository\ContactoRepository.java
 C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\security\WebSecurityConfig.java
 C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\MauroApplication.java
@@ -11,7 +13,6 @@ C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mau
 C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\service\PortafolioService.java
 C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\controller\PortafolioController.java
 C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\model\Idioma.java
-C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\security\AuthController.java
 C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\model\Contacto.java
 C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\model\Redes.java
 C:\Users\mauro\Desktop\YoProgramo\modulo8\mauro\src\main\java\com\portafolio\mauro\repository\IdiomaRepository.java
